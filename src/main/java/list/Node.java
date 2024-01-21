@@ -17,4 +17,9 @@ public class Node {
 		this.data = data;
 		this.nextNode = nextNode;
 	}
+	
+	@Override
+	public String toString() {
+		return "Node{" + "data=" + data + ", nextNode=" + nextNode + '}';
+	}
 }
