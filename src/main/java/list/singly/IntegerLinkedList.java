@@ -34,4 +34,57 @@ public class IntegerLinkedList {
 			size++;
 		}
 	}
+	
+	public int removeFirst() {
+		Node currentNode = this.head;
+		if (this.head != null) {
+			this.head = this.head.nextNode;
+		}
+		if (currentNode != null) {
+			size--;
+			return currentNode.data;
+		} else return Integer.MIN_VALUE;
+	}
+	
+	public Node search(int data) {
+		Node currentNode = head;
+		while (currentNode != null) {
+			if (currentNode.data == data) {
+				return currentNode; // Node with the given data found
+			}
+			currentNode = currentNode.nextNode;
+		}
+		return null; // Node with the given data not found
+	}
+	
+	public int remove(int data) {
+		if (isEmpty()) {
+			return Integer.MIN_VALUE; // List is empty
+		}
+		
+		if (head.data == data) {
+			// If the data to be removed is in the head node
+			return removeFirst();
+		}
+		
+		Node currentNode = head;
+		Node previousNode = null;
+		
+		// Search for the node with the given data
+		while (currentNode != null && currentNode.data != data) {
+			previousNode = currentNode;
+			currentNode = currentNode.nextNode;
+		}
+		
+		if (currentNode == null) {
+			// Node with the given data not found
+			return Integer.MIN_VALUE;
+		}
+		
+		// Remove the node with the given data
+		previousNode.nextNode = currentNode.nextNode;
+		size--;
+		
+		return currentNode.data;
+	}
 }

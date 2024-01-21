@@ -1,7 +1,7 @@
 package list.singly;
 
 public class Node {
-	private int data;
+	int data;
 	Node nextNode;
 	
 	/**
