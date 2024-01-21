@@ -14,4 +14,9 @@ public class IntegerLinkedList {
 	public boolean isEmpty() {
 		return size == 0;
 	}
+	
+	public void addFirst(int data) {
+		this.head = new Node(data, this.head);
+		size++;
+	}
 }
