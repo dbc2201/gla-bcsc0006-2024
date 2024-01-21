@@ -2,7 +2,7 @@ package list.singly;
 
 public class Node {
 	private int data;
-	private Node nextNode;
+	Node nextNode;
 	
 	/**
 	 * Creates a new node will a 'null' next field.

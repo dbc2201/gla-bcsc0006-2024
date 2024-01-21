@@ -1,7 +1,5 @@
 package list.singly;
 
-import list.singly.Node;
-
 public class IntegerLinkedList {
 	private Node head;
 	private int size;
@@ -13,6 +11,10 @@ public class IntegerLinkedList {
 	
 	public boolean isEmpty() {
 		return size == 0;
+	}
+	
+	public int getSize() {
+		return size;
 	}
 	
 	public void addFirst(int data) {
