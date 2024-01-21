@@ -10,4 +10,8 @@ public class IntegerLinkedList {
 		this.head = null;
 		this.size = 0;
 	}
+	
+	public boolean isEmpty() {
+		return size == 0;
+	}
 }
