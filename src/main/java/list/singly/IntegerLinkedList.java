@@ -1,6 +1,6 @@
 package list.singly;
 
-public class IntegerLinkedList {
+public class IntegerLinkedList implements SinglyLinkedList {
 	private Node head;
 	private int size;
 	
