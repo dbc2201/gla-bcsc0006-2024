@@ -17,3 +17,14 @@ In this package you will find a 'Linked-List' Java class that will perform the f
 - Return the size of the list (size).
 - Sequentially access all the list elements without having to manipulate an index (print).
 - find a specified target value (search).
+
+---
+
+A Linked-List data structure provides the ability to add or remove items in the list in constant time i.e. O(1).
+It is useful in cases when you need to insert and remove elements frequently. Each element in a linked-list, is called
+a node, and stores information (data) and a "link" to the next node in the list. After we find the position of a node to
+be inserted or removed, the actual insertion or removal is done in constant time and no shifts are required unlike an 
+array.
+
+A _node_ is a data structure that contains a data item and (usually) one or more links. A _link_ is a reference to another
+node.
