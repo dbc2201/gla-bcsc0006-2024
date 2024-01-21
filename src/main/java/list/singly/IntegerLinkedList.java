@@ -21,4 +21,17 @@ public class IntegerLinkedList {
 		this.head = new Node(data, this.head);
 		size++;
 	}
+	
+	public void add(int data) {
+		if (this.isEmpty()) {
+			this.addFirst(data);
+		} else {
+			Node currentNode = head;
+			while (currentNode.nextNode != null) {
+				currentNode = currentNode.nextNode;
+			}
+			currentNode.nextNode = new Node(data);
+			size++;
+		}
+	}
 }
