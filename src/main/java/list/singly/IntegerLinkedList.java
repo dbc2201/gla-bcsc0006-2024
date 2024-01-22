@@ -87,4 +87,20 @@ public class IntegerLinkedList implements SinglyLinkedList {
 		
 		return currentNode.data;
 	}
+	
+	public void print() {
+		if (isEmpty()) {
+			System.out.println("[]");
+		}
+		System.out.print("[");
+		Node currentNode = head;
+		while (currentNode != null) {
+			System.out.print(currentNode.data);
+			if (currentNode.nextNode != null) {
+				System.out.print("=>");
+			}
+			currentNode = currentNode.nextNode;
+		}
+		System.out.println("]");
+	}
 }

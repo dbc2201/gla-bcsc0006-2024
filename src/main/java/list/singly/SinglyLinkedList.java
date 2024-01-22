@@ -10,4 +10,6 @@ public interface SinglyLinkedList {
 	int remove(int data);
 	
 	Node search(int data);
+	
+	void print();
 }
