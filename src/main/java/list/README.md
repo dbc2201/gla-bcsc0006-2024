@@ -28,3 +28,10 @@ array.
 
 A _node_ is a data structure that contains a data item and (usually) one or more links. A _link_ is a reference to another
 node.
+
+---
+
+Suggested Viewing
+
+1. [Linked Lists for Technical Interviews - Full Course](https://youtu.be/Hj_rA0dhr2I?si=iDD8w2hWVH1bxRS5)
+2. [Data Structures: Linked Lists](https://youtu.be/njTh_OwMljA?si=IgWY9BgCtLmGz6rs)
