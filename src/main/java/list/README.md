@@ -7,6 +7,9 @@ However, you can’t do the following with an array object:
 - Add an element at a specified position without shifting the other elements to make room.
 - Remove an element at a specified position without shifting the other elements to fill in the resulting gap.
 
+In an unordered array, searching is slow, whereas in an ordered array, insertion is slow. In both kinds of arrays, deletion
+is slow.
+
 ---
 
 In this package you will find a 'Linked-List' Java class that will perform the following operations:
@@ -20,6 +23,8 @@ In this package you will find a 'Linked-List' Java class that will perform the f
 
 ---
 
+_Linked-Lists are probably the second most commonly used general-purpose data storage structures after arrays._
+
 A Linked-List data structure provides the ability to add or remove items in the list in constant time i.e. O(1).
 It is useful in cases when you need to insert and remove elements frequently. Each element in a linked-list, is called
 a node, and stores information (data) and a "link" to the next node in the list. After we find the position of a node to
@@ -28,6 +33,9 @@ array.
 
 A _node_ is a data structure that contains a data item and (usually) one or more links. A _link_ is a reference to another
 node.
+
+The _Linked-Lists_ are a versatile mechanism suitable for use in many kinds of general-purpose databases. It can also
+replace an array as the basis for other storage structures such as _Stacks_ and _Queues_.
 
 ---
 
