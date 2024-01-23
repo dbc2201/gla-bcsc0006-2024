@@ -91,6 +91,7 @@ public class IntegerLinkedList implements SinglyLinkedList {
 	public void print() {
 		if (isEmpty()) {
 			System.out.println("[]");
+			return;
 		}
 		System.out.print("[");
 		Node currentNode = head;
