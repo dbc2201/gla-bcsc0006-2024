@@ -21,7 +21,9 @@ In this package you will find a 'Linked-List' Java class that will perform the f
 - Sequentially access all the list elements without having to manipulate an index (print).
 - find a specified target value (search).
 
----
+---a
+
+_Linked-Lists are probably the second most commonly used general-purpose data storage structures after arrays._
 
 _Linked-Lists are probably the second most commonly used general-purpose data storage structures after arrays._
 
