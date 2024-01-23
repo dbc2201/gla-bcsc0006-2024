@@ -25,8 +25,6 @@ In this package you will find a 'Linked-List' Java class that will perform the f
 
 _Linked-Lists are probably the second most commonly used general-purpose data storage structures after arrays._
 
-_Linked-Lists are probably the second most commonly used general-purpose data storage structures after arrays._
-
 A Linked-List data structure provides the ability to add or remove items in the list in constant time i.e. O(1).
 It is useful in cases when you need to insert and remove elements frequently. Each element in a linked-list, is called
 a node, and stores information (data) and a "link" to the next node in the list. After we find the position of a node to
