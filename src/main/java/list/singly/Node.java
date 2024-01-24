@@ -1,8 +1,8 @@
 package list.singly;
 
 public class Node {
-	int data;
-	Node nextNode;
+	public int data;
+	public Node nextNode;
 	
 	/**
 	 * Creates a new node will a 'null' next field.
