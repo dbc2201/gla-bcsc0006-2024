@@ -43,3 +43,7 @@ Suggested Viewing
 
 1. [Linked Lists for Technical Interviews - Full Course](https://youtu.be/Hj_rA0dhr2I?si=iDD8w2hWVH1bxRS5)
 2. [Data Structures: Linked Lists](https://youtu.be/njTh_OwMljA?si=IgWY9BgCtLmGz6rs)
+3. [Linked List Complete Course | Data Structures & Algorithms | Types of Linked List in Java @SCALER](https://youtu.be/kn3PhQb8soI?si=CzjAXhuAGQAkMco2)
+4. [Introduction to Linked List | Data Structures & Algorithms | Java Placement Course](https://youtu.be/oAja8-Ulz6o?si=2OkyE19ssno3WobO)
+5. [Arrays vs Linked Lists - Computerphile](https://youtu.be/DyG9S9nAlUM?si=CWfia4jJFc9VYjI-)
+6. [Linked Lists - Computerphile](https://youtu.be/_jQhALI4ujg?si=Lmz-dmfjgPtf60eP)
