@@ -1,5 +1,8 @@
 package list.singly;
 
+import list.Node;
+import list.SinglyLinkedList;
+
 public class IntegerArrayLinkedList implements SinglyLinkedList {
 	@Override
 	public boolean isEmpty() {

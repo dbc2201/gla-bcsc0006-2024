@@ -1,4 +1,6 @@
-package list.singly;
+package list;
+
+import list.Node;
 
 public interface SinglyLinkedList {
 	boolean isEmpty();
