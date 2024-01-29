@@ -10,12 +10,12 @@ public class IntegerDoublyLinkedList implements DoublyLinkedList {
 	
 	@Override
 	public boolean isEmpty() {
-		return false;
+		return size == 0;
 	}
 	
 	@Override
 	public int getSize() {
-		return 0;
+		return this.size;
 	}
 	
 	@Override
