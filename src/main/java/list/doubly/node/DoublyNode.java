@@ -4,4 +4,14 @@ public class DoublyNode {
 	public int data;
 	public DoublyNode previous;
 	public DoublyNode next;
+	
+	public DoublyNode(int data) {
+		this.data = data;
+	}
+	
+	public DoublyNode(int data, DoublyNode previous, DoublyNode next) {
+		this.data = data;
+		this.previous = previous;
+		this.next = next;
+	}
 }
