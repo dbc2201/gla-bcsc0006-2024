@@ -38,10 +38,6 @@ public class IntegerDoublyLinkedList implements DoublyLinkedList {
 	}
 	
 	public int removeFirst() {
-		if (isEmpty()) {
-			// if there is no node in the list, return -214748364
-			return Integer.MIN_VALUE;
-		}
 		int removedData = head.data;
 		if (head == tail) { // there is only one node in the list
 			head = null;
@@ -56,7 +52,35 @@ public class IntegerDoublyLinkedList implements DoublyLinkedList {
 	
 	@Override
 	public int remove(int data) {
-		return 0;
+		if (isEmpty()) {
+			// if there is no node in the list, return -214748364
+			return Integer.MIN_VALUE;
+		}
+		
+		DoublyNode current = head;
+		
+		while (current != null && current.data != data) {
+			current = current.next;
+		}
+		
+		if (current == null) {
+			return Integer.MAX_VALUE; // Data not found
+		}
+		
+		if (current == head) {
+			return removeFirst(); // Use removeFirst() for the head node
+		}
+		
+		current.previous.next = current.next;
+		
+		if (current == tail) { // If removing the tail
+			tail = current.previous;
+		} else {
+			current.next.previous = current.previous;
+		}
+		
+		size--;
+		return current.data;
 	}
 	
 	@Override
