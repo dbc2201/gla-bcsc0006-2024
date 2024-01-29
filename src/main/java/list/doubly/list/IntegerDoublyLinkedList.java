@@ -85,7 +85,14 @@ public class IntegerDoublyLinkedList implements DoublyLinkedList {
 	
 	@Override
 	public DoublyNode search(int data) {
-		return null;
+		DoublyNode currentNode = head;
+		while (currentNode != null) {
+			if (currentNode.data == data) {
+				return currentNode;
+			}
+			currentNode = currentNode.next;
+		}
+		return null; // data not found
 	}
 	
 	@Override
