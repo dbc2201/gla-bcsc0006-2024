@@ -1,4 +1,4 @@
-package list;
+package list.singly;
 
 public class Node {
 	public int data;
