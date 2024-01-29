@@ -49,6 +49,10 @@ public class IntegerDoublyLinkedList implements DoublyLinkedList {
 	
 	@Override
 	public void print() {
-	
+		DoublyNode currentNode = head;
+		while (currentNode != null) {
+			System.out.print(currentNode);
+			currentNode = currentNode.next;
+		}
 	}
 }
