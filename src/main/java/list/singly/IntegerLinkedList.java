@@ -1,7 +1,6 @@
 package list.singly;
 
 import list.Node;
-import list.SinglyLinkedList;
 
 public class IntegerLinkedList implements SinglyLinkedList {
 	private Node head;
