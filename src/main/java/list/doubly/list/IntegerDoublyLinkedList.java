@@ -37,6 +37,23 @@ public class IntegerDoublyLinkedList implements DoublyLinkedList {
 		}
 	}
 	
+	public int removeFirst() {
+		if (isEmpty()) {
+			// if there is no node in the list, return -214748364
+			return Integer.MIN_VALUE;
+		}
+		int removedData = head.data;
+		if (head == tail) { // there is only one node in the list
+			head = null;
+			tail = null;
+		} else {
+			head = head.next;
+			head.previous = null;
+		}
+		size--;
+		return removedData;
+	}
+	
 	@Override
 	public int remove(int data) {
 		return 0;
