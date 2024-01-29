@@ -39,6 +39,31 @@ replace an array as the basis for other storage structures such as _Stacks_ and 
 
 ---
 
+**Singly-Linked List**
+
+![singly linked list node](../../resources/images/singly-linked-list-node.png)  
+representation of a node of a singly-linked list which has
+- the data set as `45` and 
+- the reference to the next node set as `null`.  
+
+![singly linked list](../../resources/images/singly-linked-list.png)
+representation of a singly-linked list with size `6`
+
+---
+
+**Doubly-Linked List**
+
+![doubly linked list node](../../resources/images/doubly-linked-list-node.png)  
+representation of a node of a doubly-linked list which has 
+- the data set to `45`,
+- the previous set to `null`, and
+- the next also set to `null`
+
+![doubly linked list](../../resources/images/doubly-linked-list.png)
+representation of a doubly-linked list with size `6`
+
+---
+
 Suggested Viewing
 
 1. [Linked Lists for Technical Interviews - Full Course](https://youtu.be/Hj_rA0dhr2I?si=iDD8w2hWVH1bxRS5)
