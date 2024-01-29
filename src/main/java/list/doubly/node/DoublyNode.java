@@ -17,6 +17,10 @@ public class DoublyNode {
 	
 	@Override
 	public String toString() {
-		return "{" + previous + " <--> " + this.data + " <--> " + next + "}";
+		return "{"
+				+ (previous == null ? "null" : previous.data)
+				+ " <--> " + this.data + " <--> "
+				+ (next == null ? "null" : next.data)
+				+ "}";
 	}
 }
