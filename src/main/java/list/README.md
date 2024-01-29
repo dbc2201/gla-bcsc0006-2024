@@ -46,7 +46,7 @@ representation of a node of a singly-linked list which has
 - the data set as `45` and 
 - the reference to the next node set as `null`.  
 
-![singly linked list](../../resources/images/singly-linked-list.png)
+![singly linked list](../../resources/images/singly-linked-list.png)  
 representation of a singly-linked list with size `6`
 
 ---
@@ -59,7 +59,7 @@ representation of a node of a doubly-linked list which has
 - the previous set to `null`, and
 - the next also set to `null`
 
-![doubly linked list](../../resources/images/doubly-linked-list.png)
+![doubly linked list](../../resources/images/doubly-linked-list.png)  
 representation of a doubly-linked list with size `6`
 
 ---
