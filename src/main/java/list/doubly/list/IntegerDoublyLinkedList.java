@@ -18,9 +18,23 @@ public class IntegerDoublyLinkedList implements DoublyLinkedList {
 		return this.size;
 	}
 	
+	public void addFirst(int data) {
+		DoublyNode node = new DoublyNode(data, head, tail);
+		head = node;
+		tail = node;
+		size++;
+	}
+	
 	@Override
 	public void add(int data) {
-	
+		if (this.isEmpty()) {
+			addFirst(data);
+		} else {
+			DoublyNode node = new DoublyNode(data, tail, null);
+			tail.next = node;
+			tail = node;
+			size++;
+		}
 	}
 	
 	@Override
