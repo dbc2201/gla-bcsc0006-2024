@@ -64,6 +64,16 @@ representation of a doubly-linked list with size `6`
 
 ---
 
+**Circular Linked List**
+
+![circular linked list](../../resources/images/cicular-doubly-linked-list.png)
+
+Notice how the circular (doubly) linked list resembles a doubly linked list, the main difference is that
+while the previous and next of the first and the last node respectively are null,
+they point to the tail and the head nodes respectively in a circular linked list.
+
+---
+
 Suggested Viewing
 
 1. [Linked Lists for Technical Interviews - Full Course](https://youtu.be/Hj_rA0dhr2I?si=iDD8w2hWVH1bxRS5)
