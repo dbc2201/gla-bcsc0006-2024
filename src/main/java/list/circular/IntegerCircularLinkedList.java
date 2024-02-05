@@ -32,4 +32,16 @@ public class IntegerCircularLinkedList extends IntegerDoublyLinkedList {
 			currentNode = currentNode.next;
 		}
 	}
+	
+	@Override
+	public DoublyNode search(int data) {
+		DoublyNode currentNode = head;
+		while (currentNode != tail) {
+			if (currentNode.data == data) {
+				return currentNode;
+			}
+			currentNode = currentNode.next;
+		}
+		return null; // data not found
+	}
 }
