@@ -4,6 +4,13 @@ import list.doubly.list.IntegerDoublyLinkedList;
 import list.doubly.node.DoublyNode;
 
 public class IntegerCircularLinkedList extends IntegerDoublyLinkedList {
+	public void makeCircular() {
+		if (head != null) {
+			tail.next = head;
+			head.previous = tail;
+		}
+	}
+	
 	@Override
 	public void add(int data) {
 		super.add(data);
@@ -15,13 +22,6 @@ public class IntegerCircularLinkedList extends IntegerDoublyLinkedList {
 		int removed = super.remove(data);
 		makeCircular();
 		return removed;
-	}
-	
-	public void makeCircular() {
-		if (head != null) {
-			tail.next = head;
-			head.previous = tail;
-		}
 	}
 	
 	@Override
