@@ -4,9 +4,9 @@ import list.doubly.adt.DoublyLinkedList;
 import list.doubly.node.DoublyNode;
 
 public class IntegerDoublyLinkedList implements DoublyLinkedList {
-	private int size;
 	public DoublyNode head;
 	public DoublyNode tail;
+	private int size;
 	
 	@Override
 	public boolean isEmpty() {
