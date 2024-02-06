@@ -29,7 +29,7 @@ public class IntegerCircularLinkedList extends IntegerDoublyLinkedList {
 		DoublyNode currentNode = head;
 		if (currentNode != null) { // Check for empty list
 			do {
-				System.out.print(currentNode.data + " ");
+				System.out.print(currentNode);
 				currentNode = currentNode.next;
 			} while (currentNode != head); // Loop until reaching the head again
 		}

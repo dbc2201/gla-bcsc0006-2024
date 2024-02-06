@@ -6,7 +6,7 @@ import list.doubly.node.DoublyNode;
 public class IntegerDoublyLinkedList implements DoublyLinkedList {
 	public DoublyNode head;
 	public DoublyNode tail;
-	private int size;
+	public int size;
 	
 	@Override
 	public boolean isEmpty() {
