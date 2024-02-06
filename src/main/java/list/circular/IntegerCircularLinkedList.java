@@ -3,6 +3,9 @@ package list.circular;
 import list.doubly.list.IntegerDoublyLinkedList;
 import list.doubly.node.DoublyNode;
 
+
+// IS-A relationship
+// IntegerCircularLinkedList IS-A IntegerDoublyLinkedList
 public class IntegerCircularLinkedList extends IntegerDoublyLinkedList {
 	public void makeCircular() {
 		if (head != null) {
@@ -27,20 +30,30 @@ public class IntegerCircularLinkedList extends IntegerDoublyLinkedList {
 	@Override
 	public void print() {
 		DoublyNode currentNode = head;
-		while (currentNode != tail) {
-			System.out.print(currentNode);
-			currentNode = currentNode.next;
+		if (currentNode != null) { // Check for empty list
+			do {
+				System.out.print(currentNode.data + " ");
+				currentNode = currentNode.next;
+			} while (currentNode != head); // Loop until reaching the head again
 		}
 	}
 	
 	@Override
 	public DoublyNode search(int data) {
 		DoublyNode currentNode = head;
-		while (currentNode != tail) {
-			if (currentNode.data == data) {
-				return currentNode;
-			}
-			currentNode = currentNode.next;
+//		while (currentNode != tail) {
+//			if (currentNode.data == data) {
+//				return currentNode;
+//			}
+//			currentNode = currentNode.next;
+//		}
+		if (currentNode != null) { // Check for empty list
+			do {
+				if (currentNode.data == data) {
+					return currentNode;
+				}
+				currentNode = currentNode.next;
+			} while (currentNode != head); // Loop until reaching the head again
 		}
 		return null; // data not found
 	}
