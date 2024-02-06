@@ -3,9 +3,6 @@ package list.circular;
 import list.doubly.list.IntegerDoublyLinkedList;
 import list.doubly.node.DoublyNode;
 
-
-// IS-A relationship
-// IntegerCircularLinkedList IS-A IntegerDoublyLinkedList
 public class IntegerCircularLinkedList extends IntegerDoublyLinkedList {
 	public void makeCircular() {
 		if (head != null) {
