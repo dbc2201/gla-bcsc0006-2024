@@ -1,7 +1,7 @@
-package list.circular;
+package list.reference.circular;
 
-import list.doubly.list.IntegerDoublyLinkedList;
-import list.doubly.node.DoublyNode;
+import list.reference.doubly.list.IntegerDoublyLinkedList;
+import list.reference.doubly.node.DoublyNode;
 
 public class IntegerCircularLinkedList extends IntegerDoublyLinkedList {
 	public void makeCircular() {

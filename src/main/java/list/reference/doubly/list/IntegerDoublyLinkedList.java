@@ -1,7 +1,7 @@
-package list.doubly.list;
+package list.reference.doubly.list;
 
-import list.doubly.adt.DoublyLinkedList;
-import list.doubly.node.DoublyNode;
+import list.reference.doubly.adt.DoublyLinkedList;
+import list.reference.doubly.node.DoublyNode;
 
 public class IntegerDoublyLinkedList implements DoublyLinkedList {
 	public DoublyNode head;

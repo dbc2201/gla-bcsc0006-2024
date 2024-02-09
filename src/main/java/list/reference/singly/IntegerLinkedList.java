@@ -1,4 +1,4 @@
-package list.singly;
+package list.reference.singly;
 
 public class IntegerLinkedList implements SinglyLinkedList {
 	private Node head;

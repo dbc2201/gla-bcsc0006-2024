@@ -1,4 +1,4 @@
-package list.singly;
+package list.reference.singly;
 
 public class Node {
 	public int data;

@@ -1,4 +1,4 @@
-package list.doubly.node;
+package list.reference.doubly.node;
 
 public class DoublyNode {
 	public int data;
