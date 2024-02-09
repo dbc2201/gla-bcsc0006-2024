@@ -1,6 +1,10 @@
 package list.practice.doubly;
 
 public class DoublyLinkedList {
+	Node head;
+	Node tail;
+	int size;
+	
 	static class Node {
 		int data;
 		Node next;
