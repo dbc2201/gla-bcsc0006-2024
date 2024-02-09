@@ -5,6 +5,21 @@ public class DoublyLinkedList {
 	Node tail;
 	int size;
 	
+	void addFirst() {
+	}
+	
+	void addLast() {
+	}
+	
+	void removeFirst() {
+	}
+	
+	void removeLast() {
+	}
+	
+	void print() {
+	}
+	
 	static class Node {
 		int data;
 		Node next;
