@@ -22,3 +22,15 @@ In this package you will find a 'Stack' Java class that will perform the followi
 - return the size of the stack (getSize).
 
 ---
+
+**Stack using a Linked-List**
+
+![stack using a linked list](../../resources/images/stack/stack-using-linked-list.png)  
+
+This image represents a stack created using a singly-linked list  
+
+![stack using an array](../../resources/images/stack/stack-using-array.png)  
+
+This image represents a stack created using an array
+
+--- 
