@@ -25,6 +25,7 @@ public class IntegerArrayStack implements Stack {
 	
 	@Override
 	public int pop() {
+		
 		return 0;
 	}
 	
@@ -35,7 +36,7 @@ public class IntegerArrayStack implements Stack {
 	
 	@Override
 	public boolean isUnderflow() {
-		return false;
+		return top == -1;
 	}
 	
 	@Override
