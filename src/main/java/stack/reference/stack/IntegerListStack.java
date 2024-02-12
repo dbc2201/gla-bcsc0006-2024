@@ -22,7 +22,7 @@ public class IntegerListStack implements Stack {
 	
 	@Override
 	public int peek() {
-		return 0;
+		return top.data;
 	}
 	
 	@Override
