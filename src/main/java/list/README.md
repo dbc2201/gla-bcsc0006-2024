@@ -41,32 +41,32 @@ replace an array as the basis for other storage structures such as _Stacks_ and 
 
 **Singly-Linked List**
 
-![singly linked list node](../../resources/images/singly-linked-list-node.png)  
+![singly linked list node](../../resources/images/list/singly-linked-list-node.png)  
 representation of a node of a singly-linked list which has
 - the data set as `45` and 
 - the reference to the next node set as `null`.  
 
-![singly linked list](../../resources/images/singly-linked-list.png)  
+![singly linked list](../../resources/images/list/singly-linked-list.png)  
 representation of a singly-linked list with size `6`
 
 ---
 
 **Doubly-Linked List**
 
-![doubly linked list node](../../resources/images/doubly-linked-list-node.png)  
+![doubly linked list node](../../resources/images/list/doubly-linked-list-node.png)  
 representation of a node of a doubly-linked list which has 
 - the data set to `45`,
 - the previous set to `null`, and
 - the next also set to `null`
 
-![doubly linked list](../../resources/images/doubly-linked-list.png)  
+![doubly linked list](../../resources/images/list/doubly-linked-list.png)  
 representation of a doubly-linked list with size `6`
 
 ---
 
 **Circular Linked List**
 
-![circular linked list](../../resources/images/cicular-doubly-linked-list.png)
+![circular linked list](../../resources/images/list/cicular-doubly-linked-list.png)
 
 Notice how the circular (doubly) linked list resembles a doubly linked list, the main difference is that
 while the previous and next of the first and the last node respectively are null,
