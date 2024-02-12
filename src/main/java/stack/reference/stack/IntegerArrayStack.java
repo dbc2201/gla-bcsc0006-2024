@@ -49,6 +49,6 @@ public class IntegerArrayStack implements Stack {
 	
 	@Override
 	public int getSize() {
-		return 0;
+		return size;
 	}
 }
