@@ -9,7 +9,10 @@ public class IntegerListStack implements Stack {
 	
 	@Override
 	public void push(int data) {
-	
+		StackNode node = new StackNode(data);
+		node.next = this.top;
+		this.top = node;
+		size++;
 	}
 	
 	@Override
