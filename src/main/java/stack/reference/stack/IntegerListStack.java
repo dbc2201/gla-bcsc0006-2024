@@ -32,6 +32,6 @@ public class IntegerListStack implements Stack {
 	
 	@Override
 	public int getSize() {
-		return 0;
+		return size;
 	}
 }
