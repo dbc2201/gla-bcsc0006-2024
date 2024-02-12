@@ -15,7 +15,12 @@ public class IntegerArrayStack implements Stack {
 	
 	@Override
 	public void push(int data) {
-	
+		if (top == array.length - 1) { // check if the stack is already full
+			System.err.println("Stack Overflow"); // print error
+		}
+		top++;
+		array[top] = data;
+		size++;
 	}
 	
 	@Override
