@@ -34,3 +34,9 @@ This image represents a stack created using a singly-linked list
 This image represents a stack created using an array
 
 --- 
+
+Suggested Viewing
+
+1. [Stack Data Structure Tutorial – Solve Coding Challenges](https://youtu.be/O1KeXo8lE8A?si=sRxg37NBbvMvFP4y)
+2. [Data Structures: Stacks and Queues](https://youtu.be/wjI1WNcIntg?si=st3hqnAG88Mt-YZs)
+3. [Introduction to Stacks and Queues (Data Structures & Algorithms #12)](https://youtu.be/A3ZUpyrnCbM?si=92TDbM0OmcUdOBJH)
