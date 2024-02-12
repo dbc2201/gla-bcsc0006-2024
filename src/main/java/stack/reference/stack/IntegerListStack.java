@@ -17,7 +17,14 @@ public class IntegerListStack implements Stack {
 	
 	@Override
 	public int pop() {
-		return 0;
+		if (isUnderflow()) {
+			System.err.println("Stack Underflow");
+			return Integer.MIN_VALUE;
+		}
+		StackNode poppedNode = this.top;
+		this.top = this.top.next;
+		size--;
+		return poppedNode.data;
 	}
 	
 	@Override
