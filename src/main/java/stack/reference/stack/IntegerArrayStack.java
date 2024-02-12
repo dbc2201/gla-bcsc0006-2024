@@ -25,8 +25,12 @@ public class IntegerArrayStack implements Stack {
 	
 	@Override
 	public int pop() {
-		
-		return 0;
+		if (isUnderflow()) {
+			System.err.println("Stack Underflow");
+			return Integer.MIN_VALUE; // return absurd value
+		}
+		array[top] = 0;
+		return array[top--];
 	}
 	
 	@Override
