@@ -27,7 +27,7 @@ public class IntegerListStack implements Stack {
 	
 	@Override
 	public boolean isUnderflow() {
-		return false;
+		return size == 0;
 	}
 	
 	@Override
