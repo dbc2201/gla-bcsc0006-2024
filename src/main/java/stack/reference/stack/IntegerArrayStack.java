@@ -35,7 +35,11 @@ public class IntegerArrayStack implements Stack {
 	
 	@Override
 	public int peek() {
-		return 0;
+		if (isUnderflow()) {
+			System.err.println("Stack Underflow");
+			return Integer.MIN_VALUE;
+		}
+		return array[top];
 	}
 	
 	@Override
