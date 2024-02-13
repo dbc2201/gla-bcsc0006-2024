@@ -37,6 +37,10 @@ This image represents a stack created using an array
 
 --- 
 
+[**Infix to Postfix Converter**](../stack/reference/converter/README.md)
+
+---
+
 Suggested Viewing
 
 1. [Stack Data Structure Tutorial – Solve Coding Challenges](https://youtu.be/O1KeXo8lE8A?si=sRxg37NBbvMvFP4y)
