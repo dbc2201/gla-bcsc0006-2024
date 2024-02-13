@@ -29,6 +29,10 @@ public class IntegerListStack implements Stack {
 	
 	@Override
 	public int peek() {
+		if (isUnderflow()) {
+			System.err.println("Stack Underflow");
+			return Integer.MIN_VALUE;
+		}
 		return top.data;
 	}
 	
