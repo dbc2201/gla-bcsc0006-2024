@@ -30,9 +30,10 @@ public class IntegerArrayStack implements Stack {
 			System.err.println("Stack Underflow");
 			return Integer.MIN_VALUE; // return absurd value
 		}
-		array[top] = 0;
+		int poppedValue = array[top];
+		array[top--] = 0;
 		size--;
-		return array[top--];
+		return poppedValue;
 	}
 	
 	@Override
