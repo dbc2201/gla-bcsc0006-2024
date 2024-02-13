@@ -30,6 +30,7 @@ public class IntegerArrayStack implements Stack {
 			return Integer.MIN_VALUE; // return absurd value
 		}
 		array[top] = 0;
+		size--;
 		return array[top--];
 	}
 	
