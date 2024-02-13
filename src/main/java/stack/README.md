@@ -29,6 +29,8 @@ In this package you will find a 'Stack' Java class that will perform the followi
 
 This image represents a stack created using a singly-linked list  
 
+**Stack using an Arraya**
+
 ![stack using an array](../../resources/images/stack/stack-using-array.png)  
 
 This image represents a stack created using an array
