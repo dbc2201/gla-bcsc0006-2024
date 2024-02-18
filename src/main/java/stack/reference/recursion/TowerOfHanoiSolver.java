@@ -11,3 +11,9 @@ public class TowerOfHanoiSolver {
 		showSteps(numberOfTowers - 1, helperTower, endingTower, startingTower);
 	}
 }
+class Main {
+	public static void main(String[] args) {
+		TowerOfHanoiSolver towerOfHanoiSolver = new TowerOfHanoiSolver();
+		towerOfHanoiSolver.showSteps(3, 'A', 'C', 'B');
+	}
+}
