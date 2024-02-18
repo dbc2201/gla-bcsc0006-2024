@@ -1,8 +1,8 @@
 package queue.reference.node;
 
 public class QueueNode {
-	int data;
-	QueueNode next;
+	public int data;
+	public QueueNode next;
 	
 	public QueueNode(int data) {
 		this.data = data;

@@ -18,12 +18,29 @@ public class IntegerListQueue implements Queue {
 	
 	@Override
 	public void offer(int data) {
-	
+		QueueNode node = new QueueNode(data);
+		if (isEmpty()) {
+			front = rear = node;
+		} else {
+			rear.next = node;
+			rear = node;
+		}
+		size++;
 	}
 	
 	@Override
 	public int remove() {
-		return 0;
+		if (isEmpty()) {
+			System.err.println("Queue is Empty!");
+			return Integer.MIN_VALUE;
+		}
+		int removed = front.data;
+		front = front.next;
+		if (front == null) {
+			rear = null;
+		}
+		size--;
+		return removed;
 	}
 	
 	@Override
