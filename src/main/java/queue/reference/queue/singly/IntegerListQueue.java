@@ -44,12 +44,11 @@ public class IntegerListQueue implements Queue {
 	}
 	
 	@Override
-	public int poll() {
-		return 0;
-	}
-	
-	@Override
 	public int peek() {
-		return 0;
+		if (isEmpty()) {
+			System.err.println("Queue is empty!");
+			return Integer.MIN_VALUE;
+		}
+		return front.data;
 	}
 }

@@ -5,7 +5,5 @@ public interface Queue {
 	
 	int remove();
 	
-	int poll();
-	
 	int peek();
 }
