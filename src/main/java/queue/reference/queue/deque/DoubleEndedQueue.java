@@ -14,4 +14,26 @@ public class DoubleEndedQueue {
 	public boolean isEmpty() {
 		return size == 0;
 	}
+	
+	public void offerFirst(int data) {
+		QueueNode node = new QueueNode(data);
+		if (isEmpty()) {
+			front = rear = node;
+		} else {
+			node.next = front;
+			front = node;
+		}
+		size++;
+	}
+	
+	public void offerLast(int data) {
+		QueueNode node = new QueueNode(data);
+		if (isEmpty()) {
+			front = rear = node;
+		} else {
+			rear.next = node;
+			rear = node;
+		}
+		size++;
+	}
 }
