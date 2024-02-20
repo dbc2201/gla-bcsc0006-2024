@@ -36,4 +36,29 @@ public class DoubleEndedQueue {
 		}
 		size++;
 	}
+	
+	public int removeFirst() {
+		if (isEmpty()) {
+			System.err.println("Queue is empty!");
+			return Integer.MIN_VALUE;
+		}
+		int removed = front.data;
+		front = front.next;
+		return removed;
+	}
+	
+	public int removeLast() {
+		if (isEmpty()) {
+			System.err.println("Queue is empty!");
+			return Integer.MIN_VALUE;
+		}
+		int removed = rear.data;
+		QueueNode currentNode = front;
+		while (currentNode.next != rear) {
+			currentNode = currentNode.next;
+		}
+		currentNode.next = null;
+		rear = currentNode;
+		return 0;
+	}
 }
