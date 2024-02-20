@@ -15,6 +15,23 @@ to the desired resource.
 
 ---
 
+![queue implemented using an array](../../resources/images/queue/array-queue.png)  
+Queue implemented using an array
+
+![queue implemented using linked list](../../resources/images/queue/linked-list-queue.png)  
+Queue implemented using a linked list
+
+![double ended queue](../../resources/images/queue/double-ended-queue.png)
+Double-Ended Queue (DEQueue) allows enqueue and dequeue at both front and rear
+
+![singly circular queue](../../resources/images/queue/singly-circular-queue.png)  
+Singly Circular Queue
+
+![doubly circular queue](../../resources/images/queue/doubly-circular-queue.png)  
+Doubly Circular Queue
+
+---
+
 **Suggested Viewing**
 
 1. [Data Structures: Stacks and Queues](https://youtu.be/wjI1WNcIntg?si=TJAzAmqKTS4BeMS4)
