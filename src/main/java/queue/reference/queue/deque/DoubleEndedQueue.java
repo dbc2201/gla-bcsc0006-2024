@@ -44,6 +44,7 @@ public class DoubleEndedQueue {
 		}
 		int removed = front.data;
 		front = front.next;
+		size--;
 		return removed;
 	}
 	
@@ -59,6 +60,7 @@ public class DoubleEndedQueue {
 		}
 		currentNode.next = null;
 		rear = currentNode;
+		size--;
 		return 0;
 	}
 	
