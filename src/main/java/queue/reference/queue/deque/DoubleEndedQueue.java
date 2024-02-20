@@ -61,4 +61,20 @@ public class DoubleEndedQueue {
 		rear = currentNode;
 		return 0;
 	}
+	
+	public int peekFirst() {
+		if (isEmpty()) {
+			System.err.println("Queue is empty!");
+			return Integer.MIN_VALUE;
+		}
+		return front.data;
+	}
+	
+	public int peekLast() {
+		if (isEmpty()) {
+			System.err.println("Queue is empty!");
+			return Integer.MIN_VALUE;
+		}
+		return rear.data;
+	}
 }
