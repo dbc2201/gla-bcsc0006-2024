@@ -62,11 +62,40 @@ public class CircularQueue {
 	}
 	
 	public int removeFirst() {
-		return 0;
+		if (isEmpty()) {
+			System.err.println("Queue is empty!");
+			return Integer.MIN_VALUE;
+		}
+		int removed = front.data;
+		if (front == rear) {
+			front = rear = null;
+		} else {
+			front = front.next;
+			rear.next = front;
+		}
+		size--;
+		return removed;
 	}
 	
 	public int removeLast() {
-		return 0;
+		if (isEmpty()) {
+			System.err.println("Queue is empty!");
+			return Integer.MIN_VALUE;
+		}
+		int removed = rear.data;
+		if (front == rear) {
+			front = rear = null;
+		} else {
+			QueueNode currentNode = front;
+			while (currentNode.next != rear) {
+				currentNode = currentNode.next;
+			}
+			currentNode.next = null;
+			rear = currentNode;
+			rear.next = front;
+		}
+		size--;
+		return removed;
 	}
 	
 	public int peekFirst() {
