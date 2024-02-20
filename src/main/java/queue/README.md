@@ -17,4 +17,6 @@ to the desired resource.
 
 **Suggested Viewing**
 
-1. 
+1. [Data Structures: Stacks and Queues](https://youtu.be/wjI1WNcIntg?si=TJAzAmqKTS4BeMS4)
+2. [Introduction to Stacks and Queues (Data Structures & Algorithms #12)](https://youtu.be/A3ZUpyrnCbM?si=xAYrBkq5_iDDYrWQ)
+3. [Queue in Data Structure Course 2023 | Data Structures and Algorithm | FIFO Principle | @SCALER](https://youtu.be/pOoYDawChGk?si=OfQ9DZ5km6t9gipDa)
