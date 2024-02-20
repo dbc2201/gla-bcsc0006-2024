@@ -6,4 +6,12 @@ public class DoubleEndedQueue {
 	public QueueNode front;
 	public QueueNode rear;
 	private int size;
+	
+	public int getSize() {
+		return size;
+	}
+	
+	public boolean isEmpty() {
+		return size == 0;
+	}
 }
