@@ -31,6 +31,10 @@ public class DoublyQueue {
 			return Integer.MIN_VALUE;
 		}
 		int removed = front.data;
+		if (front == rear) {
+			front = rear = null;
+			return removed;
+		}
 		front = front.next;
 		front.previous = null;
 		size--;
