@@ -1,5 +1,16 @@
 package queue.reference.queue.doubly;
 
 public class DoublyQueueNode {
-
+	public int data;
+	DoublyQueueNode next;
+	DoublyQueueNode previous;
+	
+	public DoublyQueueNode(int data) {
+		this.data = data;
+	}
+	
+	@Override
+	public String toString() {
+		return "DoublyQueueNode{" + "data=" + data + ", next=" + next + ", previous=" + previous + '}';
+	}
 }
