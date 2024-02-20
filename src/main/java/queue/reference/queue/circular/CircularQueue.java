@@ -1,8 +1,9 @@
 package queue.reference.queue.circular;
 
+import queue.reference.adt.Queue;
 import queue.reference.node.QueueNode;
 
-public class CircularQueue {
+public class CircularQueue implements Queue {
 	QueueNode front;
 	QueueNode rear;
 	int size;
@@ -28,24 +29,8 @@ public class CircularQueue {
 		return size == capacity;
 	}
 	
-	public void offerFirst(int data) {
-		if (isFull()) {
-			System.err.println("Queue is full!");
-			return;
-		}
-		QueueNode node = new QueueNode(data);
-		if (isEmpty()) {
-			front = rear = node;
-			node.next = node;
-		} else {
-			node.next = front;
-			front = node;
-			rear.next = front;
-		}
-		size++;
-	}
-	
-	public void offerLast(int data) {
+	@Override
+	public void offer(int data) {
 		if (isFull()) {
 			System.err.println("Queue is full!");
 			return;
@@ -59,9 +44,11 @@ public class CircularQueue {
 			rear = node;
 			rear.next = front;
 		}
+		size++;
 	}
 	
-	public int removeFirst() {
+	@Override
+	public int remove() {
 		if (isEmpty()) {
 			System.err.println("Queue is empty!");
 			return Integer.MIN_VALUE;
@@ -77,32 +64,12 @@ public class CircularQueue {
 		return removed;
 	}
 	
-	public int removeLast() {
+	@Override
+	public int peek() {
 		if (isEmpty()) {
 			System.err.println("Queue is empty!");
 			return Integer.MIN_VALUE;
 		}
-		int removed = rear.data;
-		if (front == rear) {
-			front = rear = null;
-		} else {
-			QueueNode currentNode = front;
-			while (currentNode.next != rear) {
-				currentNode = currentNode.next;
-			}
-			currentNode.next = null;
-			rear = currentNode;
-			rear.next = front;
-		}
-		size--;
-		return removed;
-	}
-	
-	public int peekFirst() {
-		return 0;
-	}
-	
-	public int peekLast() {
-		return 0;
+		return front.data;
 	}
 }
