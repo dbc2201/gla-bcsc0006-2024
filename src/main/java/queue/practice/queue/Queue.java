@@ -1,4 +1,4 @@
-package queue.practice.queue;
+ package queue.practice.queue;
 
 public class Queue {
 	Node front;
@@ -14,7 +14,6 @@ public class Queue {
 	}
 	
 	public void enqueue(int data) {
-		return;
 	}
 	
 	public int dequeue() {
