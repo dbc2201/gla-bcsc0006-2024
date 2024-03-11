@@ -9,6 +9,7 @@ public class SimpleLinearSearcher {
 	 * @return -1 if the key is not found in the array, otherwise the index at which the key was found.
 	 */
 	public int linearSearch(int[] numbers, int key) {
+		
 		return Integer.MIN_VALUE;
 	}
 }
