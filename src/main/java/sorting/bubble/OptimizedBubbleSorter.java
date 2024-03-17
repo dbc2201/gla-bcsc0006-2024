@@ -1,6 +1,6 @@
 package sorting.bubble;
 
-public class OptimizedBubbleSort {
+public class OptimizedBubbleSorter {
 	public void sort(int[] numbers) {
 		for (int counter = 0; counter < numbers.length; counter++) {
 			for (int index = 0; index < numbers.length - counter - 1; index++) {
