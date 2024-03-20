@@ -46,3 +46,4 @@ Suggested Viewing
 1. [Stack Data Structure Tutorial – Solve Coding Challenges](https://youtu.be/O1KeXo8lE8A?si=sRxg37NBbvMvFP4y)
 2. [Data Structures: Stacks and Queues](https://youtu.be/wjI1WNcIntg?si=st3hqnAG88Mt-YZs)
 3. [Introduction to Stacks and Queues (Data Structures & Algorithms #12)](https://youtu.be/A3ZUpyrnCbM?si=92TDbM0OmcUdOBJH)
+4. [Intro to Stacks – Data Structure Explained](https://youtu.be/k1IaYPGel3s?si=I1a9xCL0MTY-d4fU)
