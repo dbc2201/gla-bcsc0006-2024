@@ -37,4 +37,11 @@ public class BinaryTree {
 			return new BinaryTree(this.rootNode.rightNode);
 		} else return null;
 	}
+	
+	public boolean isLeafNode() {
+		if (this.rootNode == null) {
+			return true;
+		}
+		return this.rootNode.leftNode == null && this.rootNode.rightNode == null;
+	}
 }
