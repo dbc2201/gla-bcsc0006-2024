@@ -16,3 +16,4 @@ Suggested Viewing
 12. [Heap sort in 4 minutes](https://youtu.be/2DmK_H7IdTo?si=DgCRIsIaG6T6FAMZ)
 13. [Insertion Sort Algorithm in Java - Full Tutorial With Source](https://youtu.be/0lOnnd50cGI?si=GQpLS0yqsQUWiwjn)
 14. [Quicksort Sort Algorithm in Java - Full Tutorial With Source](https://youtu.be/h8eyY7dIiN4?si=JSP_kF8yTno7ROiG)
+15. [Quick Sort - Computerphile](https://youtu.be/XE4VP_8Y0BU?si=92E9IhOxMOe2e4M7)
