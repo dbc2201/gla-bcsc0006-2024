@@ -1,18 +1,18 @@
 package tree.binary;
 
 public class TreeNode {
-	private final int data;
-	private final TreeNode leftTreeNode;
-	private final TreeNode rightTreeNode;
+	int data;
+	TreeNode leftNode;
+	TreeNode rightNode;
 	
 	public TreeNode(int data) {
 		this.data = data;
-		this.leftTreeNode = null;
-		this.rightTreeNode = null;
+		this.leftNode = null;
+		this.rightNode = null;
 	}
 	
 	@Override
 	public String toString() {
-		return "TreeNode{" + "data=" + data + ", leftTreeNode=" + leftTreeNode + ", rightTreeNode=" + rightTreeNode + '}';
+		return "TreeNode{" + "data=" + data + ", leftNode=" + leftNode + ", rightNode=" + rightNode + '}';
 	}
 }
