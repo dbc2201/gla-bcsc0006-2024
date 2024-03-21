@@ -44,4 +44,23 @@ public class BinaryTree {
 		}
 		return this.rootNode.leftNode == null && this.rootNode.rightNode == null;
 	}
+	
+	public TreeNode search(int key) {
+		TreeNode currentNode = this.rootNode;
+		if (currentNode == null) {
+			return new TreeNode(Integer.MIN_VALUE);
+		}
+		while (currentNode.data != key) {
+			if (key < currentNode.data) {
+				currentNode = currentNode.leftNode;
+			} else {
+				currentNode = currentNode.rightNode;
+			}
+			
+			if (currentNode == null) {
+				return new TreeNode(Integer.MIN_VALUE);
+			}
+		}
+		return currentNode;
+	}
 }
