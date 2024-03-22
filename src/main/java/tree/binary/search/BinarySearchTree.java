@@ -1,17 +1,19 @@
-package tree.binary;
+package tree.binary.search;
 
-public class BinaryTree {
+import tree.binary.TreeNode;
+
+public class BinarySearchTree {
 	private TreeNode rootNode;
 	
-	public BinaryTree() {
+	public BinarySearchTree() {
 		this.rootNode = null;
 	}
 	
-	public BinaryTree(TreeNode rootNode) {
+	public BinarySearchTree(TreeNode rootNode) {
 		this.rootNode = rootNode;
 	}
 	
-	public BinaryTree(int data, BinaryTree leftTree, BinaryTree rightTree) {
+	public BinarySearchTree(int data, BinarySearchTree leftTree, BinarySearchTree rightTree) {
 		this.rootNode = new TreeNode(data);
 		if (leftTree != null) {
 			this.rootNode.leftNode = leftTree.rootNode;
@@ -26,15 +28,15 @@ public class BinaryTree {
 		}
 	}
 	
-	public BinaryTree getLeftSubTree() {
+	public BinarySearchTree getLeftSubTree() {
 		if (this.rootNode != null && this.rootNode.leftNode != null) {
-			return new BinaryTree(this.rootNode.leftNode);
+			return new BinarySearchTree(this.rootNode.leftNode);
 		} else return null;
 	}
 	
-	public BinaryTree getRightSubTree() {
+	public BinarySearchTree getRightSubTree() {
 		if (this.rootNode != null && this.rootNode.rightNode != null) {
-			return new BinaryTree(this.rootNode.rightNode);
+			return new BinarySearchTree(this.rootNode.rightNode);
 		} else return null;
 	}
 	
