@@ -1,7 +1,7 @@
 package tree.binary;
 
 public class BinaryTree {
-	private final TreeNode rootNode;
+	private TreeNode rootNode;
 	
 	public BinaryTree() {
 		this.rootNode = null;
@@ -43,6 +43,34 @@ public class BinaryTree {
 			return true;
 		}
 		return this.rootNode.leftNode == null && this.rootNode.rightNode == null;
+	}
+	
+	public void insertNode(int data) {
+		TreeNode node = new TreeNode(data);
+		
+		if (this.rootNode == null) { // if there is no node in the binary tree
+			this.rootNode = node;    // make the new node the root node
+		} else {
+			TreeNode currentNode = this.rootNode;
+			TreeNode parentNode;
+			
+			while (true) {
+				parentNode = currentNode;
+				if (data < currentNode.data) {
+					currentNode = currentNode.leftNode;
+					if (currentNode == null) {
+						parentNode.leftNode = node;
+						return;
+					}
+				} else {
+					currentNode = currentNode.rightNode;
+					if (currentNode == null) {
+						parentNode.rightNode = node;
+						return;
+					}
+				}
+			}
+		}
 	}
 	
 	public TreeNode search(int key) {
