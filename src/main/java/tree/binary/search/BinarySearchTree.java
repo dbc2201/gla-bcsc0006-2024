@@ -93,4 +93,12 @@ public class BinarySearchTree {
 		}
 		return currentNode;
 	}
+	
+	public void traverseTreeInOrder(TreeNode rootNode) {
+		if (rootNode != null) {
+			traverseTreeInOrder(rootNode.leftNode);
+			System.out.println(rootNode.data);
+			traverseTreeInOrder(rootNode.rightNode);
+		}
+	}
 }
