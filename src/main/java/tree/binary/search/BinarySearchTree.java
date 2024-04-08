@@ -3,7 +3,7 @@ package tree.binary.search;
 import tree.binary.TreeNode;
 
 public class BinarySearchTree {
-	private TreeNode rootNode;
+	public TreeNode rootNode;
 	
 	public BinarySearchTree() {
 		this.rootNode = null;
@@ -40,11 +40,11 @@ public class BinarySearchTree {
 		} else return null;
 	}
 	
-	public boolean isLeafNode() {
-		if (this.rootNode == null) {
+	public boolean isLeafNode(TreeNode node) {
+		if (node == null) {
 			return true;
 		}
-		return this.rootNode.leftNode == null && this.rootNode.rightNode == null;
+		return node.leftNode == null && node.rightNode == null;
 	}
 	
 	public void insertNode(int data) {
@@ -99,6 +99,38 @@ public class BinarySearchTree {
 			traverseTreeInOrder(rootNode.leftNode);
 			System.out.println(rootNode.data);
 			traverseTreeInOrder(rootNode.rightNode);
+		}
+	}
+	
+	public TreeNode findMinimumNode(TreeNode root) {
+		if (root == null) {
+			return null;
+		} else if (isLeafNode(root)) {
+			return root;
+		} else {
+			TreeNode currentNode = rootNode;
+			TreeNode parentNode = null;
+			while (currentNode != null) {
+				parentNode = currentNode;
+				currentNode = currentNode.leftNode;
+			}
+			return parentNode;
+		}
+	}
+	
+	public TreeNode findMaximumNode(TreeNode root) {
+		if (root == null) {
+			return null;
+		} else if (isLeafNode(root)) {
+			return root;
+		} else {
+			TreeNode currentNode = rootNode;
+			TreeNode parentNode = null;
+			while (currentNode != null) {
+				parentNode = currentNode;
+				currentNode = currentNode.rightNode;
+			}
+			return parentNode;
 		}
 	}
 }
