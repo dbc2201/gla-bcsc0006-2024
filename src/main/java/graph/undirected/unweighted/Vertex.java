@@ -1,5 +1,5 @@
 package graph.undirected.unweighted;
 
-public class Graph {
+public class Vertex {
 
 }
