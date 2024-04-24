@@ -1,6 +1,9 @@
 package graph.undirected.unweighted;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 public class Graph {
 	Map<Vertex, List<Vertex>> adjacencyList;
@@ -18,5 +21,11 @@ public class Graph {
 		Vertex vertex2 = new Vertex(label2);
 		adjacencyList.get(vertex1).add(vertex2);
 		adjacencyList.get(vertex2).add(vertex1);
+	}
+	
+	public void printGraph() {
+		adjacencyList.forEach(
+				((vertex, verticesList) -> System.out.println("{" + vertex + ", " + verticesList + "}"))
+		);
 	}
 }
