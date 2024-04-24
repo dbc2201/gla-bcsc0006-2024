@@ -1,13 +1,15 @@
 package graph.undirected.unweighted;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Graph {
 	Map<Vertex, List<Vertex>> adjacencyList;
 	
 	public Graph() {
 		adjacencyList = new HashMap<>();
+	}
+	
+	public void addVertex(String label) {
+		adjacencyList.putIfAbsent(new Vertex(label), new LinkedList<>());
 	}
 }
