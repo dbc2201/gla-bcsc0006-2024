@@ -34,4 +34,11 @@ public class Graph {
 		adjacencyList.remove(vertex);
 		adjacencyList.forEach((currentVertex, verticesList) -> verticesList.remove(vertex));
 	}
+	
+	public void removeEdge(String label1, String label2) {
+		Vertex vertex1 = new Vertex(label1);
+		Vertex vertex2 = new Vertex(label2);
+		adjacencyList.get(vertex1).remove(vertex2);
+		adjacencyList.get(vertex2).remove(vertex1);
+	}
 }
