@@ -28,4 +28,10 @@ public class Graph {
 				((vertex, verticesList) -> System.out.println("{" + vertex + ", " + verticesList + "}"))
 		);
 	}
+	
+	public void removeVertex(String label) {
+		Vertex vertex = new Vertex(label);
+		adjacencyList.remove(vertex);
+		adjacencyList.forEach((currentVertex, verticesList) -> verticesList.remove(vertex));
+	}
 }
