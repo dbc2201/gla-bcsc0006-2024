@@ -1,5 +1,4 @@
 package graph.undirected.weighted;
 
-public class Edge {
-
+public class Vertex {
 }
