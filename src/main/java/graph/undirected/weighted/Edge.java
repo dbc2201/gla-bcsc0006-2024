@@ -3,12 +3,14 @@ package graph.undirected.weighted;
 import java.util.Objects;
 
 public class Edge {
-	private final Vertex fromVertex;
 	private final Vertex toVertex;
 	private final double weight;
 	
-	public Edge(Vertex fromVertex, Vertex toVertex, double weight) {
-		this.fromVertex = fromVertex;
+	public Vertex getToVertex() {
+		return toVertex;
+	}
+	
+	public Edge(Vertex toVertex, double weight) {
 		this.toVertex = toVertex;
 		this.weight = weight;
 	}
@@ -18,17 +20,16 @@ public class Edge {
 		if (this == o) return true;
 		if (!(o instanceof Edge edge)) return false;
 		return Double.compare(weight, edge.weight) == 0 &&
-				Objects.equals(fromVertex, edge.fromVertex) &&
 				Objects.equals(toVertex, edge.toVertex);
 	}
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(fromVertex, toVertex, weight);
+		return Objects.hash(toVertex, weight);
 	}
 	
 	@Override
 	public String toString() {
-		return fromVertex + " -- (" + weight + ") -- " + toVertex;
+		return toVertex + "(" + weight + ")";
 	}
 }
